@@ -10,23 +10,49 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <style>
-      /* Centered 1200px container */
+
       h2 {
         font-family: "DM Sans", sans-serif;
+        font-size: 2em;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
       }
+      
+      h3 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.5em;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      p{
+        font-family: "DM Sans", sans-serif;
+        font-size: 1em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      ul{
+        font-family: "DM Sans", sans-serif;
+        font-size: 1em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
 
+      /* Centered 1200px container */
       body {
         width: 1200px;
-        margin: 0 10%;
+        margin: 0 auto;
       }
 
       header {
-        width: 100%;
+        width: 1160px;
         height: 80px;
-        background: lightblue;
+        background: linear-gradient(to bottom, white, #ECF2FF);
         list-style: none;
         display: inline-block;
         align-items: left;
@@ -42,7 +68,7 @@
       nav {
         float: right;
         display: inline-block;
-        margin: 20px;
+        margin: 15px;
       }
 
       nav li {
@@ -52,33 +78,33 @@
         display: inline-block;
         font-size: 1em;
         text-align: right;
+        
       }
 
       nav a {
         text-decoration: none;
-        color: black;
+        color: #457FFF;
         margin-right: 20px;
 
       }
 
       nav a:hover {
         text-decoration: underline;
+        color: #8BAEFF;
       }
 
-      .content-body {
-        margin: 20px
-      }
 
       #hero {
-        height: 600px;
-        background-image: url('hero_back2.png');
+        width: 1200px;
         background-size: cover;
+        background-image: url('hero_back2.png');
+        background-position: center;
       }
 
       #hero .container {
-        padding-top: 200px;
-        margin: 0 auto;
+        padding: 200px 0;
         text-align: center;
+        margin: 0 auto;
       }
 
       #hero a {
@@ -92,6 +118,29 @@
         cursor: pointer;
       }
 
+      #what-we-do .container{
+        display: grid;
+        margin: auto;
+        width: 1200px;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2%;
+        justify-content: center;
+      }
+      
+      #what-we-do .grid-item{
+        background: #457FFF;
+        text-align: center;
+        padding: 10%;
+        color: white;
+      }
+      
+      #what-we-do img{
+        width: 20%;
+        padding-top: 15%;
+      }
+      
+
+      
       footer {
         margin: 20px;
         background: #f2f2f2;
@@ -108,18 +157,18 @@
         <nav>
           <ul>
             <li><a href="#what-we-do"> What We Do</a></li>
-            <li><a href="our-beliefs"> Our Beliefs</a></li>
-            <li><a href="events"> Events</a></li>
-            <li><a href="about-us"> About Us</a></li>
-            <li><a href="contact"> Get In Touch</a></li>
+            <li><a href="#our-beliefs"> Our Beliefs</a></li>
+            <li><a href="#events"> Events</a></li>
+            <li><a href="#about-us"> About Us</a></li>
+            <li><a href="#contact"> Get In Touch</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="content-body">
+    <div>
 
 
-      <section id="hero">
+      <section id="hero" class="body-section">
         <div class="container">
           <h1>Not just a dance team</h1>
           <p>Get a move on, you belong here</p>
@@ -129,27 +178,33 @@
         </div>
       </section>
 
-      <section id="what-we-do" class="body-section">
-        <div class="container">
+      <section id="what-we-do">
           <h2>WHAT WE DO</h2>
+        <div class="container">
+          <div class="grid-item">
+            <img src="community_performances1.png" alt="">
+            <h3>Community Performances</h3>
+            <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
+            <p>Bringing joy, energy, and passion to public spaces.</p>
+          </div>
+          <div class="grid-item">
+            <img src="official_cheer_stations1.png" alt="">
+            <h3>Official Cheer Station</h3>
+            <p>We have partnered with multiple Toronto marathons including:</p>
+            <ul>
+              <li>Toronto Waterfront Marathon</li>
+              <li>Toronto Marathon</li>
+              <li>Mississauga Marathon</li>
+              <li>Ottawa Marathon</li>
+            </ul>
+          </div>
 
-          <h3>Community Performances</h3>
-          <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
-          <p>Bringing joy, energy, and passion to public spaces.</p>
-
-          <h3>Official Cheer Station</h3>
-          <p>We have partnered with multiple Toronto marathons including:</p>
-          <ul>
-            <li>Toronto Waterfront Marathon</li>
-            <li>Toronto Marathon</li>
-            <li>Mississauga Marathon</li>
-            <li>Ottawa Marathon</li>
-          </ul>
-
-
-          <h3>Group Rehearsals</h3>
-          <p>Structured weekly practices learning unified choreography.</p>
-          <p>Build teamwork, confidence, and stage presence.</p>
+          <div class="grid-item">
+            <img src="group_rehearsals1.png" alt="">
+            <h3>Group Rehearsals</h3>
+            <p>Structured weekly practices learning unified choreography.</p>
+            <p>Build teamwork, confidence, and stage presence.</p>
+          </div>
         </div>
       </section>
 
