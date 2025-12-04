@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <style>
-
       h2 {
         font-family: "DM Sans", sans-serif;
         font-size: 2em;
@@ -18,7 +17,7 @@
         font-weight: 600;
         font-style: normal;
       }
-      
+
       h3 {
         font-family: "DM Sans", sans-serif;
         font-size: 1.5em;
@@ -27,15 +26,23 @@
         font-style: normal;
       }
       
-      p{
+      h4 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.5em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      p {
         font-family: "DM Sans", sans-serif;
         font-size: 1em;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
       }
-      
-      ul{
+
+      ul {
         font-family: "DM Sans", sans-serif;
         font-size: 1em;
         font-optical-sizing: auto;
@@ -78,7 +85,7 @@
         display: inline-block;
         font-size: 1em;
         text-align: right;
-        
+
       }
 
       nav a {
@@ -118,29 +125,82 @@
         cursor: pointer;
       }
 
-      #what-we-do .container{
+      #what-we-do .container {
         display: grid;
         margin: auto;
         width: 1200px;
         grid-template-columns: 30% 30% 30%;
         gap: 2%;
         justify-content: center;
+        margin-bottom: 100px;
       }
-      
-      #what-we-do .grid-item{
-        background: #457FFF;
+
+      #what-we-do h2 {
         text-align: center;
-        padding: 10%;
+        margin-top: 100px;
+        color: #457FFF;
+      }
+
+      #what-we-do .grid-item {
+        background: linear-gradient(to bottom, #5F90FF, #457FFF);
+        text-align: center;
+        padding: 15%;
         color: white;
       }
-      
-      #what-we-do img{
-        width: 20%;
+
+      #what-we-do img {
+        width: 50px;
         padding-top: 15%;
       }
-      
 
-      
+      #what-we-do ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #our-beliefs .container {
+        width: 1200px;
+        margin: auto;
+      }
+
+      #our-beliefs .top-image {
+        width: 100%;
+        display: block;
+      }
+
+      /* TWO-COLUMN GRID */
+      #our-beliefs .beliefs-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: 40px 80px;
+      }
+
+      #our-beliefs .left h2 {
+        margin-top: 10px;
+        color: #457FFF;
+      }
+
+      #our-beliefs .quote-row {
+        display: flex;
+        grid-template-columns: 80% 20%;
+        margin-top: 40px;
+        align-items: center;
+        justify-self: center;
+        gap: 40px;
+        background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
+        color: #457FFF;
+        padding: 10px 55px;
+
+      }
+
+      #our-beliefs .megaphone-img {
+        width: 50px;
+        justify-self: center;
+      }
+
+
       footer {
         margin: 20px;
         background: #f2f2f2;
@@ -178,8 +238,9 @@
         </div>
       </section>
 
+      <!-- SECTION 2 — WHAT WE DOS -->
       <section id="what-we-do">
-          <h2>WHAT WE DO</h2>
+        <h2>WHAT WE DO</h2>
         <div class="container">
           <div class="grid-item">
             <img src="community_performances1.png" alt="">
@@ -187,6 +248,7 @@
             <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
             <p>Bringing joy, energy, and passion to public spaces.</p>
           </div>
+
           <div class="grid-item">
             <img src="official_cheer_stations1.png" alt="">
             <h3>Official Cheer Station</h3>
@@ -211,19 +273,32 @@
 
       <!-- SECTION 3 — OUR BELIEFS -->
       <section id="our-beliefs" class="body-section">
-        <img src="our_beliefs_top1.png" alt="">
         <div class="container">
-          <h2>OUR BELIEFS</h2>
 
-          <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners with warmth and spirit.</p>
-          <p>We cheer as runners and we dance with passion.</p>
+          <!-- TOP FULL-WIDTH IMAGE -->
+          <img class="top-image" src="our_beliefs_top1.png" alt="">
 
-          <p>Whether you want to stay healthy, build confidence, or put on a show, you belong here.</p>
+          <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
+          <div class="beliefs-grid">
+            <div class="left">
+              <h2>OUR BELIEFS</h2>
+            </div>
 
-          <h3>
-            “We are runners who can dance, and dancers who cheer with all their hearts!”
-          </h3>
+            <div class="right">
+              <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners
+                with warmth and spirit. We cheer as runners and we dance with passion.</p>
 
+              <p>Whether you want to stay healthy, build confidence, or put on a show, you belong here.</p>
+            </div>
+          </div>
+
+          <div class="quote-row">
+            <h4 class="beliefs-quote">
+              “We are runners who can dance, and dancers who cheer with all their hearts!”
+            </h4>
+
+            <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone image">
+          </div>
         </div>
       </section>
 
